@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robot_follow" type="host_robot.py" name="host_robot" output="screen" />
+</launch>

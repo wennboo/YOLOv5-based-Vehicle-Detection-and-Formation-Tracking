@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robot_follow" type="move_to_destination.py" name="move_to_destination" output="screen" />
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robot_follow_yolo" type="obstacle_avoid.py" name="obstacle_avoid" output="screen" />
+</launch>

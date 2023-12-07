@@ -1,0 +1,9 @@
+/home/xtark/robot_follow_yolo/install/_setup_util.py
+/home/xtark/robot_follow_yolo/install/env.sh
+/home/xtark/robot_follow_yolo/install/setup.bash
+/home/xtark/robot_follow_yolo/install/local_setup.bash
+/home/xtark/robot_follow_yolo/install/setup.sh
+/home/xtark/robot_follow_yolo/install/local_setup.sh
+/home/xtark/robot_follow_yolo/install/setup.zsh
+/home/xtark/robot_follow_yolo/install/local_setup.zsh
+/home/xtark/robot_follow_yolo/install/.rosinstall

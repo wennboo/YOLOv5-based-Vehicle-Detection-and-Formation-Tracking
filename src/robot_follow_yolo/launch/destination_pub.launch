@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robot_follow" type="destination_pub.py" name="destination_pub" output="screen" />
+</launch>

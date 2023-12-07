@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robot_follow_yolo" type="robot_follow_yolo5n.py" name="robot_follow_yolo" output="screen" />
+</launch>

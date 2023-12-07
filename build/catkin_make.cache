@@ -1,0 +1,2 @@
+robot_follow_yolo
+-DCATKIN_DEVEL_PREFIX=/home/xtark/robot_follow_yolo/devel -DCMAKE_INSTALL_PREFIX=/home/xtark/robot_follow_yolo/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/xtark/robot_follow_yolo/devel
+
+Name: tf2_py
+Description: Description of tf2_py
+Version: 0.6.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy tf2

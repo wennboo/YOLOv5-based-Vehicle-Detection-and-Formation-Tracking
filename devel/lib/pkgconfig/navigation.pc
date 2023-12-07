@@ -1,0 +1,8 @@
+prefix=/home/xtark/robot_follow_yolo/devel
+
+Name: navigation
+Description: Description of navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

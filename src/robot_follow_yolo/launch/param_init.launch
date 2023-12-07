@@ -1,0 +1,4 @@
+<launch>
+    <param name="distance_flag" value="0" />
+    <param name="obstacle_detected" value="false" />
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+    <!-- 启动rviz节点以及相关的配置文件 -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find xtark_track)/config/xtark_track.rviz" required="true" />
+</launch>
