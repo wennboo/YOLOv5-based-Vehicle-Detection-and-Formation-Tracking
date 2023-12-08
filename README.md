@@ -10,3 +10,8 @@ Train a pt model that can recognize cars. [Training method](https://docs.ultraly
 3. Write the formation tracking method.
 ##### Experiment
 
+
+
+https://github.com/wennboo/YOLOv5-based-Vehicle-Detection-and-Formation-Tracking/assets/95563506/7ff44aa3-a305-4936-9e19-63463cedbccf
+
+
