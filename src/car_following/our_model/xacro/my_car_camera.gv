@@ -1,0 +1,26 @@
+digraph G {
+node [shape=box];
+"base_footprint" [label="base_footprint"];
+"base_link" [label="base_link"];
+"camera" [label="camera"];
+"depthcamera" [label="depthcamera"];
+"left_back_wheel" [label="left_back_wheel"];
+"left_fore_wheel" [label="left_fore_wheel"];
+"right_back_wheel" [label="right_back_wheel"];
+"right_fore_wheel" [label="right_fore_wheel"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_footprint" -> "base_link2base_footprint" [label="xyz: 0 0 0.065 \nrpy: 0 -0 0"]
+"base_link2base_footprint" -> "base_link"
+"base_link" -> "camera2base_link" [label="xyz: 0.15 -0.0125 0.0625 \nrpy: 0 -0 0"]
+"camera2base_link" -> "camera"
+"base_link" -> "depthcamera2base_link" [label="xyz: 0.15 0.0125 0.0625 \nrpy: 0 -0 0"]
+"depthcamera2base_link" -> "depthcamera"
+"base_link" -> "left_back_wheel2base_link" [label="xyz: 0.15 -0.1 -0.0325 \nrpy: 0 -0 0"]
+"left_back_wheel2base_link" -> "left_back_wheel"
+"base_link" -> "left_fore_wheel2base_link" [label="xyz: 0.15 0.1 -0.0325 \nrpy: 0 -0 0"]
+"left_fore_wheel2base_link" -> "left_fore_wheel"
+"base_link" -> "right_back_wheel2base_link" [label="xyz: -0.15 -0.1 -0.0325 \nrpy: 0 -0 0"]
+"right_back_wheel2base_link" -> "right_back_wheel"
+"base_link" -> "right_fore_wheel2base_link" [label="xyz: -0.15 0.1 -0.0325 \nrpy: 0 -0 0"]
+"right_fore_wheel2base_link" -> "right_fore_wheel"
+}

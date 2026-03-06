@@ -1,0 +1,11 @@
+
+<robot name="follower_car" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="inertia.xacro" />
+    <xacro:include filename="base.xacro" />
+    <xacro:include filename="camera.xacro" />
+    <xacro:include filename="depthcamera.xacro" />
+    <xacro:include filename="sim/driver.xacro" />
+    <xacro:include filename="sim/camera.xacro" />
+    <xacro:include filename="sim/depthcamera.xacro" />
+
+</robot>

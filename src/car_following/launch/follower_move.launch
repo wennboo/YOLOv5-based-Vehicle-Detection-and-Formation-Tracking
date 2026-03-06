@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="follower_move" >
+    <remap from="/cmd_vel" to="/follower/cmd_vel" />
+    </node>
+</launch>

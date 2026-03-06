@@ -1,0 +1,35 @@
+<launch>
+    <!-- experiment setup -->
+    <!-- experiment setup -->
+    <!-- experiment setup -->
+    <include file="$(find car_following)/launch/gazebo_rviz.launch" />
+
+
+    <!-- pub pose node -->
+    <node pkg="car_following" type="pose_pub" name="pose_pub" />
+
+    <!-- pid control car move --> 
+    <node pkg="car_following" type="leader_in_car" name="leader" />
+
+    <!-- 控制mcp跟随运动 -->
+    <!-- <node pkg="car_following" type="mpc_follower.py" name="mpc_follower" /> -->
+    <node pkg="car_following" type="pid_follower.py" name="pid_follower" />
+     <!-- <node pkg="car_following" type="mpc_follower_smooth.py" name="mpc_follower_smooth" /> -->
+
+    <!-- 发布相对位置坐标系关系 -->
+    <node pkg="car_following" type="tf_world_leader" name="tf_world_leader" />
+
+    <node pkg="car_following" type="tf_world_follower" name="tf_world_follower" />
+    
+    <!-- predict -->
+    <!-- <node pkg="car_following" type="predict.py" name="predict" /> 
+
+    <node pkg="car_following" type="depth.py" name="depth" />
+
+    <node pkg="car_following" type="camera_to_world.py" name="camera_to_world" />
+
+    <node pkg="car_following" type="kalman_filt.py" name="kalman_filt" />
+
+    <node pkg="car_following" type="predict_leader_pub" name="predict_leader_pub" />
+     -->
+</launch>

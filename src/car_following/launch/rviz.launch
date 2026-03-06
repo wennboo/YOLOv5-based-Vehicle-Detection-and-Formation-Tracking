@@ -1,0 +1,18 @@
+<launch>
+
+
+    <!-- 设置参数 -->
+    <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+
+    
+    <param name="robot_description"  command="$(find xacro)/xacro $(find car_following)/our_model/xacro/leader/model.xacro" />
+    <param name="robot_description"  command="$(find xacro)/xacro $(find car_following)/our_model/xacro/follower/model.xacro" />
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find car_following)/rviz/car_following_rviz.rviz"/>
+   
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
+ 
+    
+
+</launch>
